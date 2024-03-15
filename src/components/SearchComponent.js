@@ -12,10 +12,10 @@ const Search = styled("div")(({ theme }) => ({
     backgroundColor: alpha(theme.palette.common.white, 0.25),
   },
   marginRight: theme.spacing(2),
-  marginLeft: 0,
+  marginLeft: theme.spacing(2),
   width: "100%",
+  height: "20%",
   [theme.breakpoints.up("sm")]: {
-    marginLeft: theme.spacing(3),
     width: "auto",
   },
 }));
@@ -48,12 +48,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 const SearchComponent = () => {
   return (
     <>
-      {/* <div className="mt-[15px] w-[100%] h-[20%] bg-app-layover flex items-center justify-between">
-        <p>hey</p>
-        <p>hello</p>
-        <p>bye</p>
-      </div> */}
-      <div className="w-[100%] mt-5 p-2">
+      <div className="w-[100%] mt-5">
         <Search>
           <SearchIconWrapper>
             <div className="w-[100%] flex justify-between items-center">
