@@ -4,8 +4,6 @@ import {
   List,
   ListItem,
   ListItemPrefix,
-  ListItemSuffix,
-  Chip,
 } from "@material-tailwind/react";
 import {
   ChatBubbleBottomCenterIcon,
@@ -29,7 +27,10 @@ const Sidebar = () => {
     <Card className="h-[100vh] w-full max-w-[260px] p-4 bg-app-layover text-button-purple">
       <div>
         <div className="flex justify-between items-center">
-          <Typography variant="h5" className="w-[86px]">
+          <Typography
+            variant="h5"
+            className="w-[86px] ml-[10px] pl-[10px] mb-[10px]"
+          >
             Dummy
           </Typography>
           <CogIcon className="h-5 w-5" />
